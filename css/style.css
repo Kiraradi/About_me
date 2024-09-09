@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+ul {
+    list-style-type: none;
+}
+
+/* HEADER */
+
 .header {
     background-color: #EEEFF1;
     width: 100%;
@@ -20,8 +26,7 @@
 }
 
 .navigation__list {
-    display: flex;  
-    list-style-type: none;
+    display: flex;
 }
 
 .header__logo {
@@ -169,4 +174,159 @@
         text-align: center;
 
     }
+}
+
+/* MAIN */
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+    align-items: center;
+    gap: 100px;
+}
+
+.section__description {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 540px;
+}
+
+.section__title {
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: center;
+}
+
+.section__text {
+    line-height: 26.25px;
+    text-align: center;
+    color: #727272;
+}
+
+.section_about {
+    padding-top: 119px;
+}
+
+.label_list_wrapper {
+    display: flex;
+    width: 100%;
+    background-color: #34547A;
+    padding: 100px 0; 
+    align-items: center;
+    justify-content: center;
+}
+
+.label_list {
+    display: flex;
+    gap: 49px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.label_list__item {
+    display: flex;
+    gap: 20px;
+}
+
+.label_list__item__description {
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.label_list__item__description h3 {
+    font-size: 21px;
+    line-height: 24.61px;
+    text-align: left;
+}
+
+.skills_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills {
+    max-width: 1150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__description {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.skills__title {
+    font-size: 32px;
+    line-height: 37.5px;
+    text-align: left;
+}
+
+.skills_list__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;    
+    align-items: flex-start;
+}
+
+.skills_list_item__title {
+    font-size: 16px;
+    line-height: 26.25px;
+    text-align: left;
+    color: #727272;
+}
+
+.progress_scale {
+    max-width: 445px;
+    width: 100%;
+    height: 4px;
+    background-color: #C4C4C4;
+    
+}
+
+.current_progress {
+    width: 75%;
+    background-color: #34547A;
+    height: 100%;
+}
+
+.skills__logo {
+    max-width: 555px;
+    width: 100%;
+}
+
+@media(max-width: 1279px) {
+   .skills {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 98px;
+        padding: 0 18px;
+   }
+
+   .skills__description {
+        align-items: center;
+   }
+
+   .skills_list__item {
+    align-items: center;
+   }
 }
